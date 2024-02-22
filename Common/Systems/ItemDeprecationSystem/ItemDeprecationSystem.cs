@@ -1,4 +1,6 @@
 ﻿namespace TheGrotto.Common.Systems {
+
+    //maybe replace this with something that just modifies vanilla items outright? instead of adding new ones and depricating the originals
     public class ItemDeprecationSystem : ModSystem {
         public static List<int> itemTypes = new();
 

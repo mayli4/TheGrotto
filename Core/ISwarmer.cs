@@ -1,5 +1,5 @@
 ﻿namespace TheGrotto.Core {
-    internal interface ISwarmerNPC {
+    internal interface ISwarmNPC {
         int swarmSize();
     }
 }
