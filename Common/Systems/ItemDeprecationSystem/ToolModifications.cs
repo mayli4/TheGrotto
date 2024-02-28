@@ -1,9 +1,14 @@
 ﻿namespace TheGrotto.Common.Systems {
-    public class ToolModifications : GlobalItem {
+    public class Pick : GlobalItem {
         public override bool InstancePerEntity => true;
         public override bool AltFunctionUse(Item item, Player player) => true;
 
-        int hammerMod = 0;
+        public List<int> ExcludedItems = new() {
+            ItemID.Pwnhammer
+        };
+
+        int hammerMod = 0 / 2;
+        int storedPickPower = 0;
 
         public override bool AppliesToEntity(Item entity, bool lateInstantiation) {
             if(entity.pick > 0)
@@ -14,6 +19,7 @@
         public override void SetDefaults(Item entity) {
             ItemID.Sets.ItemsThatAllowRepeatedRightClick[entity.type] = true;
             hammerMod = entity.pick;
+            storedPickPower = entity.pick;
         }
 
         public override bool CanUseItem(Item item, Player player) {
@@ -23,12 +29,13 @@
             }
             else {
                 item.hammer = 0;
+                item.pick = storedPickPower;
             }
             return true;
         }
 
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips) {
-            TooltipLine hammerPower = new TooltipLine(Mod, "ToolPower", $"{hammerMod}% Hammer Power");
+            TooltipLine hammerPower = new TooltipLine(Mod, "HammerPower", $"{hammerMod}% Hammer Power");
             TooltipLine line = new TooltipLine(Mod, "ToolHelp", "Has a dual use as a hammer! Right click to hammer tiles.");
 
             tooltips.Add(line);
