@@ -35,7 +35,7 @@
                     }
                 }
             }
-            foreach(var type in VanillaNPCSystem.npcsToOverride)
+            foreach(var type in VanillaOverrideSystem.npcsToOverride)
             {
                 if(type is ISwarmNPC swarmer)
                     if(((type.NPCTypes is Array && ((int[])type.NPCTypes).Contains(npc.type)) || (type.NPCTypes is int @int && @int == npc.type) || (type.NPCTypes is short @short && @short == npc.type)) && source is not EntitySource_Parent)
