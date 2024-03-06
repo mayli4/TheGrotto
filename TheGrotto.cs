@@ -14,10 +14,12 @@ global using System;
 global using System.Collections.Generic;
 global using System.Reflection;
 
-global using TheGrotto.Core.Overrides;
 global using TheGrotto.Core;
 
 namespace TheGrotto {
+	/// <summary>
+	/// note to self keep the amount of content this class directly manages to a minimum
+	/// </summary>
 	public class TheGrotto : Mod {
 		public static string Localize() => Language.GetTextValue("");
 	}
