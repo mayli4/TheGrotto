@@ -1,1 +1,15 @@
 NPCs.DuskBat.DisplayName: Dusk Bat
+
+Biomes: {
+	TheGarden: {
+		DisplayName: The Garden
+		TownNPCDialogueName: the The Garden
+	}
+}
+
+Items: {
+	DebugItem: {
+		DisplayName: Debug Item
+		Tooltip: ""
+	}
+}

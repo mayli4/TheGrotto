@@ -8,10 +8,12 @@
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="tModLoader.CodeAssist" Version="0.1.*" />
+    <None Remove="Assets\Images\Backgrounds\TheGardenUnderground0.png" />
+    <None Remove="Assets\Images\Backgrounds\TheGardenUnderground1.png" />
+    <None Remove="Assets\Images\Backgrounds\TheGardenUnderground2.png" />
+    <None Remove="Assets\Images\Backgrounds\TheGardenUnderground3.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Assets\" />
-    <Folder Include="Utilities\" />
+    <PackageReference Include="tModLoader.CodeAssist" Version="0.1.*" />
   </ItemGroup>
 </Project>
