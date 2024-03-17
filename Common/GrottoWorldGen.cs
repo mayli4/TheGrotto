@@ -1,5 +1,5 @@
 ﻿namespace TheGrotto.Common {
-    public class GrottoWorldGen : GrottoSystem {
+    public class GrottoWorldGen : BaseSystem<GrottoWorldGen> {
 
     }
 }

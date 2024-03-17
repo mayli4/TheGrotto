@@ -1,7 +1,5 @@
 ﻿namespace TheGrotto.Core {
 
-    public abstract class GrottoSystem : ModSystem, IGrottoType<ModSystem> { }
-
     public abstract class GrottoNPC : ModNPC, IGrottoType<ModNPC> {
         public virtual bool autoLoadTexture { get; set; }
 
@@ -41,6 +39,10 @@
                 _ => false,
             };
         }
+    }
+
+    public abstract class BaseSystem<T> : ModSystem, IGrottoType<ModSystem> where T : BaseSystem<T> {
+        T Instance = ModContent.GetInstance<T>(); 
     }
 
 }

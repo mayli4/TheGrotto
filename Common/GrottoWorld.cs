@@ -1,5 +1,5 @@
 ﻿namespace TheGrotto.Common {
-    public class GrottoWorld : GrottoSystem {
+    public class GrottoWorld : BaseSystem<GrottoWorld> {
         public static Rectangle gardenBiomeBounds = new(Main.spawnTileX, 700, 128, 70);
         public GrottoWorld() {
 
