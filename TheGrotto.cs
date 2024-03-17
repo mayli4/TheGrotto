@@ -23,6 +23,7 @@ global using TheGrotto.Core;
 global using TheGrotto.Common.Biomes.TheGarden;
 global using TheGrotto.Common;
 global using TheGrotto.Common.Bases;
+global using TheGrotto.Utilities.Noise;
 
 
 namespace TheGrotto {

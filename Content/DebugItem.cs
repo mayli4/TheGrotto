@@ -24,7 +24,7 @@
 
         public override bool? UseItem(Player player) {
 
-            TheGardenWorldGen.ClearTiles(default, default);
+            TheGardenWorldGen.GardenGenerationPass(default, default);
 
             return true;
         }
