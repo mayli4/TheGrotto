@@ -15,5 +15,21 @@ Items: {
 }
 
 VillagerNames: {
+	"Forest": [
+		"Test 1",
+		"Test 2",
+		"Test 3",
+		"Test 4",
+	]
+}
 
+Reputation: {
+	"Forest": [
+		"Vilified" = -100,
+		"Hated" = -60,
+		"Disliked" = -40,
+		"Neutral" = 0,
+		"Liked" = -50,
+		"Idolized" = 100,
+	]
 }
