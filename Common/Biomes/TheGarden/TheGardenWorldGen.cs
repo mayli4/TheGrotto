@@ -1,7 +1,7 @@
 ﻿namespace TheGrotto.Common.Biomes.TheGarden {
     //should it be one big biome? or split into several smaller ones scattered throughout the world? idk ill decide later
     //will continue work on this again once i have a more solid idea of what the biome should be
-    public class TheGardenWorldGen : GrottoSystem {
+    public class TheGardenWorldGen : BaseSystem<TheGardenWorldGen> {
 
         public static Rectangle bounds = GrottoWorld.gardenBiomeBounds;
 
