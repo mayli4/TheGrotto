@@ -37,6 +37,8 @@
 		<Using Include="Terraria.ModLoader" />
 		<Using Include="Terraria.ModLoader.IO" />
 		
+		<Using Include="ReLogic.Content" />
+		
 		<Using Include="Microsoft.Xna.Framework" />
 		<Using Include="Microsoft.Xna.Framework.Graphics" />
 		<Using Include="Microsoft.Xna.Framework.Input" />
@@ -53,6 +55,7 @@
 		<Using Include="TheGrotto.Common" />
 		<Using Include="TheGrotto.Common.Bases" />
 		<Using Include="TheGrotto.Common.Biomes.TheGarden" />
+		<Using Include="TheGrotto.Common.Systems;" />
 		<Using Include="TheGrotto.Utilities" />
 		<Using Include="TheGrotto.Utilities.Noise" />
 	</ItemGroup>

@@ -1,7 +1,7 @@
 ﻿using Terraria.Graphics.Light;
 
 namespace TheGrotto.Common.Biomes.TheGarden {
-    public class TheGardenSystem : GrottoSystem {
+    public class TheGardenSystem : BaseSystem<TheGardenSystem> {
 
         public override void Load() {
             On_TrackGenerator.IsLocationInvalid += PreventRailsFromGenerating;
